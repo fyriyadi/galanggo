@@ -1,0 +1,12 @@
+<form method="POST" action="/confirm_donation/{{projectid}}/">
+
+ <div class="container">
+   <label><b>Jumlah Donasi</b></label></br>
+   {% csrf_token %}
+   <!-- input type dengan incremental design ad nilai maximum -->
+   <input name="nilaidonasi" id="jumlahDonasi" type="number" min="0" step="5000" value="0" />
+   <br>
+   <button type="submit">Donate</button>
+ </div>
+
+</form>
